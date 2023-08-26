@@ -17,7 +17,7 @@ public static Connection getConnection() {
 	String uri=String.format("jdbc:mysql://%s:%d/%s?user=%s&password=%s",
 			HOST, PORT, SCHEMA, USER, PASSWORD);
 	try {
-		Connection conn=DriverManager.getConnection(uri);
+		Connection conn=DriverManager.getConnection(uri); // it will connect with the driver
 		System.out.println("Connection is successful!!");
 		return conn;
 	} catch (SQLException e) {

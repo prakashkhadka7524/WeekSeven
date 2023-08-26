@@ -7,7 +7,7 @@ public class ProjectsApp {
 	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 		DbConnection dbConnection= new DbConnection();
-		dbConnection.getConnection();
+		dbConnection.getConnection(); // calling the method from DbConnection class
 	}
 
 }
